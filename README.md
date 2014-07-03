@@ -3,7 +3,7 @@ Zanimalnq
 
 Installation
 
-Clone this repo/n
+Clone this repo
 cd to repo location
 sudo apt-get install mysql mysql-server mysql-python
 pip install south
