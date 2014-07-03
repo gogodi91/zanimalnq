@@ -4,16 +4,27 @@ Zanimalnq
 Installation
 
 Clone this repo
+
 cd to repo location
+
 sudo apt-get install mysql mysql-server mysql-python
+
 pip install south
+
 mysql -u root -p
+
 CREATE DATABASE mdrsDatabase;
+
 CREATE USER 'mdrs'@'localhost' IDENTIFIED BY 't34mt34mt';
+
 GRANT ALL PRIVILEGES ON mdrsDatabase.* TO 'mdrs'@'localhost';
+
 quit
+
 python manage syncdb
+
 python manage migrate
+
 python runserver 0.0.0.0:8080
 
 =========
