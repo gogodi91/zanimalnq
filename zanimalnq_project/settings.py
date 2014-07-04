@@ -1,4 +1,8 @@
 # Django settings for zanimalnq_project project.
+import os
+PROJECT_PATH = os.getcwd()
+TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -111,6 +115,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    
+    TEMPLATE_PATH,
 )
 
 INSTALLED_APPS = (
