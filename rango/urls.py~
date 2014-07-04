@@ -1,0 +1,6 @@
+from django.conf.urls import patterns, url
+from rango import views
+
+urlpatterns = patterns('',
+		  (r"^$", direct_to_template, {"template": "index.html"}),
+        url(r'^$', views.index, name='index'))
